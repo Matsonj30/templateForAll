@@ -3,9 +3,9 @@ $primaryColor: #FAFAFA;
 $primaryDark:  #FAFAFA;
 $primaryLight: #FAFAFA;
 
-$secondaryColor: #FAFAFA;
-$secondaryColorDark: #FAFAFA;
-$secondaryColorLight: #FAFAFA;
+$secondaryColor: #366e41;
+$secondaryColorDark: #325038;
+$secondaryColorLight: #47a35a;
 
 $accentColor: #FAFAFA;
 $accentColorDark: #FAFAFA;
@@ -29,6 +29,11 @@ $grayColor:  #FAFAFA;
   src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 
+@font-face{
+  font-family: "thin";
+  font-style: normal;
+}
+
 //-------------------------------FONTS----------------------------------------------
 
 //-------------------------------MULTI PURPOSE CSS---------------------------------
@@ -39,7 +44,6 @@ $grayColor:  #FAFAFA;
   
 }
 
-
 .wrapper{
     display: flex;
     justify-content: center;
@@ -47,9 +51,8 @@ $grayColor:  #FAFAFA;
   }
 
 
-
 //-------------------------------IMPORTS---------------------------------
 
-
+@import "_landing.scss" 
 
 //-------------------------------IMPORTS---------------------------------
