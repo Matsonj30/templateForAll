@@ -1,0 +1,133 @@
+  //-------------------------MENU OPTIONS---------------------------------------
+  .mainContent{
+    .navigationBar{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 125px;
+        background-color: $primaryColor;
+        z-index: 2;
+        overflow: visible;
+
+        img{
+            width: 100px;
+            height: 100px;
+            padding-left: 40px;
+        }
+        #menu{
+            background-color: $secondaryColor;
+            position: absolute;
+            top: 125px;
+            width: 100%;
+            height: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation-fill-mode: forwards !important; //doesnt work if set animation in css
+            overflow: hidden;
+            z-index: 2;
+            ul{
+                list-style: none;
+                width: 100%;
+
+                li{
+                    height: 75px;
+                    border-bottom: 1px solid $primaryColor;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .fa{   
+                       padding-right: 5px;
+                       width: 25px;
+                        text-align: center;
+                    }
+                    .fa-mobile{
+                        font-size: 30px;
+                    }
+                    .fa-users{
+                        font-size: 20px;
+                    }
+                    a{
+                        width: 155px;
+                        text-decoration: none;
+                        color: $primaryColor;
+                        font-size: 25px;
+                  
+                    }
+                }
+                li:hover{
+                    background-color: $primaryColor;
+
+                    a{
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+        .hamburgerMenu{
+            position: absolute;
+            top: 50px;
+            right:  50px;
+            
+    
+            input{
+                width: 70px;
+                height: 50px;
+                opacity: 0%;
+                position: absolute;
+                top: -10px;
+                left: -15px;
+            
+            }
+            span{
+                display: block;
+                width: 40px;
+                height: 5px;
+                margin-bottom: 5px;
+                border-radius: 5px;
+                background-color: $secondaryColorLight;
+                transition: 0.3s ease-in;
+            
+            }
+            span:nth-child(2){
+                transform-origin: 0% 0%;
+            }
+            span:last-child{
+                transform-origin: 0% 100%;
+                    
+            }
+            input:checked ~ span{
+                transform: rotate(45deg) translate(0px, 0px);
+                background-color: $secondaryColorLight;
+            }
+        
+            input:checked ~ span:nth-child(3){
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+            input:checked ~ span:nth-child(4){
+                transform: rotate(-45deg) translate(-5px, 4px);
+            }
+        }
+    }
+}
+
+
+@keyframes mobile-open-menu{
+to{
+    height: 100vh;
+}
+
+}
+
+@keyframes mobile-close-menu{
+from{
+    height: 100vh;
+}
+to{
+    height: 0vh;
+}
+
+}

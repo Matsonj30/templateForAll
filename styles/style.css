@@ -9,8 +9,9 @@
   src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 @font-face {
-  font-family: "thin";
+  font-family: "Paytone";
   font-style: normal;
+  src: url(../fonts/Paytone_One/PaytoneOne-Regular.ttf);
 }
 * {
   margin: 0;
@@ -26,7 +27,6 @@
 
 .landing {
   position: relative;
-  z-index: 1;
   overflow: hidden;
   height: 1000px;
 }
@@ -37,6 +37,16 @@
   background-size: cover;
   position: fixed;
 }
+.landing .mainContent .mainHeadline {
+  position: relative;
+  z-index: 1;
+}
+.landing .mainContent .mainHeadline h1 {
+  font-family: "bold";
+  color: #FAFAFA;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
 .landing .mainContent::after {
   content: "";
   position: absolute;
@@ -45,9 +55,10 @@
   width: 100%;
   height: 700px;
   background: black;
-  opacity: 0.3;
+  opacity: 0.5;
 }
-.landing .mainContent .navigationBar {
+
+.mainContent .navigationBar {
   position: relative;
   display: flex;
   align-items: center;
@@ -57,12 +68,12 @@
   z-index: 2;
   overflow: visible;
 }
-.landing .mainContent .navigationBar img {
+.mainContent .navigationBar img {
   width: 100px;
   height: 100px;
   padding-left: 40px;
 }
-.landing .mainContent .navigationBar #menu {
+.mainContent .navigationBar #menu {
   background-color: #366e41;
   position: absolute;
   top: 125px;
@@ -74,47 +85,48 @@
   -webkit-animation-fill-mode: forwards !important;
           animation-fill-mode: forwards !important;
   overflow: hidden;
+  z-index: 2;
 }
-.landing .mainContent .navigationBar #menu ul {
+.mainContent .navigationBar #menu ul {
   list-style: none;
   width: 100%;
 }
-.landing .mainContent .navigationBar #menu ul li {
+.mainContent .navigationBar #menu ul li {
   height: 75px;
   border-bottom: 1px solid #FAFAFA;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.landing .mainContent .navigationBar #menu ul li .fa {
+.mainContent .navigationBar #menu ul li .fa {
   padding-right: 5px;
   width: 25px;
   text-align: center;
 }
-.landing .mainContent .navigationBar #menu ul li .fa-mobile {
+.mainContent .navigationBar #menu ul li .fa-mobile {
   font-size: 30px;
 }
-.landing .mainContent .navigationBar #menu ul li .fa-users {
+.mainContent .navigationBar #menu ul li .fa-users {
   font-size: 20px;
 }
-.landing .mainContent .navigationBar #menu ul li a {
+.mainContent .navigationBar #menu ul li a {
   width: 155px;
   text-decoration: none;
   color: #FAFAFA;
   font-size: 25px;
 }
-.landing .mainContent .navigationBar #menu ul li:hover {
+.mainContent .navigationBar #menu ul li:hover {
   background-color: #FAFAFA;
 }
-.landing .mainContent .navigationBar #menu ul li:hover a {
+.mainContent .navigationBar #menu ul li:hover a {
   color: #366e41;
 }
-.landing .mainContent .navigationBar .hamburgerMenu {
+.mainContent .navigationBar .hamburgerMenu {
   position: absolute;
   top: 50px;
   right: 50px;
 }
-.landing .mainContent .navigationBar .hamburgerMenu input {
+.mainContent .navigationBar .hamburgerMenu input {
   width: 70px;
   height: 50px;
   opacity: 0%;
@@ -122,7 +134,7 @@
   top: -10px;
   left: -15px;
 }
-.landing .mainContent .navigationBar .hamburgerMenu span {
+.mainContent .navigationBar .hamburgerMenu span {
   display: block;
   width: 40px;
   height: 5px;
@@ -131,21 +143,21 @@
   background-color: #47a35a;
   transition: 0.3s ease-in;
 }
-.landing .mainContent .navigationBar .hamburgerMenu span:nth-child(2) {
+.mainContent .navigationBar .hamburgerMenu span:nth-child(2) {
   transform-origin: 0% 0%;
 }
-.landing .mainContent .navigationBar .hamburgerMenu span:last-child {
+.mainContent .navigationBar .hamburgerMenu span:last-child {
   transform-origin: 0% 100%;
 }
-.landing .mainContent .navigationBar .hamburgerMenu input:checked ~ span {
+.mainContent .navigationBar .hamburgerMenu input:checked ~ span {
   transform: rotate(45deg) translate(0px, 0px);
   background-color: #47a35a;
 }
-.landing .mainContent .navigationBar .hamburgerMenu input:checked ~ span:nth-child(3) {
+.mainContent .navigationBar .hamburgerMenu input:checked ~ span:nth-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-.landing .mainContent .navigationBar .hamburgerMenu input:checked ~ span:nth-child(4) {
+.mainContent .navigationBar .hamburgerMenu input:checked ~ span:nth-child(4) {
   transform: rotate(-45deg) translate(-5px, 4px);
 }
 

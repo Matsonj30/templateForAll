@@ -30,8 +30,9 @@ $grayColor:  #FAFAFA;
 }
 
 @font-face{
-  font-family: "thin";
+  font-family: "Paytone";
   font-style: normal;
+  src:url(../fonts/Paytone_One/PaytoneOne-Regular.ttf);
 }
 
 //-------------------------------FONTS----------------------------------------------
@@ -53,6 +54,6 @@ $grayColor:  #FAFAFA;
 
 //-------------------------------IMPORTS---------------------------------
 
-@import "_landing.scss" 
-
+@import "_landing.scss" ;
+@import "_navigationMenuScrollDown.scss";
 //-------------------------------IMPORTS---------------------------------
