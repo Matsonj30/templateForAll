@@ -1,0 +1,48 @@
+.socialMedia{
+    display: flex;
+    padding-top: 25px;
+    .fa{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: $primaryColor;
+        transition: 0.3s ease-in-out;
+        margin:10px;
+    }
+ 
+
+    .fa:first-child{
+        background-color: #3B5998;
+        border: 2px solid #3B5998;
+    }
+    .fa:first-child:hover{
+        color: #3B5998;
+    }
+
+
+    .fa:nth-child(2){
+        background-color: #55ACEE;
+        border: 2px solid #55ACEE;
+    }
+    .fa:nth-child(2):hover{
+        color: #55ACEE;
+    }
+
+
+    .fa:nth-child(3){
+       background-color: rgb(209, 31, 129);
+       border: 2px solid rgb(209, 31, 129);
+    }
+    .fa:nth-child(3):hover{
+        color: rgb(209, 31, 129);
+
+    }  
+    .fa:hover{
+        background-color: $primaryColor;
+    }
+
+}

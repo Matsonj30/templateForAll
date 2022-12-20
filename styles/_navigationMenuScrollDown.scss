@@ -6,12 +6,12 @@
         align-items: center;
         width: 100%;
         height: 125px;
-        background-color: $primaryColor;
+        background-color: rgba(255, 255, 255, 0.753);
         z-index: 2;
         overflow: visible;
 
         img{
-            width: 100px;
+            width: auto;
             height: 100px;
             padding-left: 40px;
         }
@@ -87,7 +87,7 @@
                 height: 5px;
                 margin-bottom: 5px;
                 border-radius: 5px;
-                background-color: $secondaryColorLight;
+                background-color: $secondaryColorDark;
                 transition: 0.3s ease-in;
             
             }
@@ -100,7 +100,7 @@
             }
             input:checked ~ span{
                 transform: rotate(45deg) translate(0px, 0px);
-                background-color: $secondaryColorLight;
+                background-color: $secondaryColorDark;
             }
         
             input:checked ~ span:nth-child(3){

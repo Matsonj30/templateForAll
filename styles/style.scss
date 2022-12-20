@@ -4,8 +4,8 @@ $primaryDark:  #FAFAFA;
 $primaryLight: #FAFAFA;
 
 $secondaryColor: #366e41;
-$secondaryColorDark: #325038;
-$secondaryColorLight: #47a35a;
+$secondaryColorDark: #5c8f58;
+$secondaryColorLight: #9ABC58;
 
 $accentColor: #FAFAFA;
 $accentColorDark: #FAFAFA;
@@ -56,4 +56,6 @@ $grayColor:  #FAFAFA;
 
 @import "_landing.scss" ;
 @import "_navigationMenuScrollDown.scss";
+@import "_socialMediaBar.scss";
+@import "_socialMediaCircles.scss";
 //-------------------------------IMPORTS---------------------------------

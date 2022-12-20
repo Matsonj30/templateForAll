@@ -28,7 +28,7 @@
 .landing {
   position: relative;
   overflow: hidden;
-  height: 1000px;
+  height: 700px;
 }
 .landing .mainContent {
   background-image: url("../images/photo-1594704696535-7888feb55d05 (1).png");
@@ -38,14 +38,47 @@
   position: fixed;
 }
 .landing .mainContent .mainHeadline {
+  height: 520px;
   position: relative;
   z-index: 1;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .landing .mainContent .mainHeadline h1 {
-  font-family: "bold";
-  color: #FAFAFA;
   letter-spacing: 1px;
-  font-size: 25px;
+  font-size: 35px;
+  max-width: 400px;
+}
+.landing .mainContent .mainHeadline p {
+  padding: 20px 0px;
+  font-size: 16px;
+}
+.landing .mainContent .mainHeadline .greenButton, .landing .mainContent .mainHeadline .whiteButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 16px;
+  padding: 6px 15px;
+  background-color: #366e41;
+  border: 3px solid #366e41;
+  border-radius: 25px;
+  color: #FAFAFA;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.landing .mainContent .mainHeadline .whiteButton {
+  background-color: #FAFAFA;
+  color: black;
+  border: 3px solid #FAFAFA;
+  margin-left: 8px;
 }
 .landing .mainContent::after {
   content: "";
@@ -55,7 +88,7 @@
   width: 100%;
   height: 700px;
   background: black;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .mainContent .navigationBar {
@@ -64,12 +97,12 @@
   align-items: center;
   width: 100%;
   height: 125px;
-  background-color: #FAFAFA;
+  background-color: rgba(255, 255, 255, 0.753);
   z-index: 2;
   overflow: visible;
 }
 .mainContent .navigationBar img {
-  width: 100px;
+  width: auto;
   height: 100px;
   padding-left: 40px;
 }
@@ -140,7 +173,7 @@
   height: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  background-color: #47a35a;
+  background-color: #5c8f58;
   transition: 0.3s ease-in;
 }
 .mainContent .navigationBar .hamburgerMenu span:nth-child(2) {
@@ -151,7 +184,7 @@
 }
 .mainContent .navigationBar .hamburgerMenu input:checked ~ span {
   transform: rotate(45deg) translate(0px, 0px);
-  background-color: #47a35a;
+  background-color: #5c8f58;
 }
 .mainContent .navigationBar .hamburgerMenu input:checked ~ span:nth-child(3) {
   opacity: 0;
@@ -187,4 +220,44 @@
   to {
     height: 0vh;
   }
+}
+.socialMedia {
+  display: flex;
+  padding-top: 25px;
+}
+.socialMedia .fa {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #FAFAFA;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+}
+.socialMedia .fa:first-child {
+  background-color: #3B5998;
+  border: 2px solid #3B5998;
+}
+.socialMedia .fa:first-child:hover {
+  color: #3B5998;
+}
+.socialMedia .fa:nth-child(2) {
+  background-color: #55ACEE;
+  border: 2px solid #55ACEE;
+}
+.socialMedia .fa:nth-child(2):hover {
+  color: #55ACEE;
+}
+.socialMedia .fa:nth-child(3) {
+  background-color: rgb(209, 31, 129);
+  border: 2px solid rgb(209, 31, 129);
+}
+.socialMedia .fa:nth-child(3):hover {
+  color: rgb(209, 31, 129);
+}
+.socialMedia .fa:hover {
+  background-color: #FAFAFA;
 }/*# sourceMappingURL=style.css.map */
