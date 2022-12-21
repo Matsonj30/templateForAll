@@ -1,11 +1,11 @@
 //-------------------------------COLORS---------------------------------
-$primaryColor: #FAFAFA;
+$primaryColor: #fafafa;
 $primaryDark:  #FAFAFA;
 $primaryLight: #FAFAFA;
 
 $secondaryColor: #366e41;
-$secondaryColorDark: #5c8f58;
-$secondaryColorLight: #9ABC58;
+$secondaryColorDark: #2e9179;
+$secondaryColorLight: #ECF9F3;
 
 $accentColor: #FAFAFA;
 $accentColorDark: #FAFAFA;
@@ -26,9 +26,15 @@ $grayColor:  #FAFAFA;
 @font-face{
   font-family: "bold";
   font-style: normal;
-  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+  src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+  font-weight: 900;
 }
 
+@font-face{
+  font-family: "Thin";
+  font-style: normal;
+  src: url(../fonts/Poppins/Poppins-Thin.ttf);
+}
 @font-face{
   font-family: "Paytone";
   font-style: normal;
@@ -42,20 +48,43 @@ $grayColor:  #FAFAFA;
     margin: 0;   
     padding: 0;
     font-family: "Poppins";
-  
+    
 }
+body{
+  background-color: $primaryColor;
 
+}
 .wrapper{
     display: flex;
     justify-content: center;
     width: 100%
   }
 
-
+  .greenButton{
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    padding: 6px 15px;
+    background-color: $secondaryColor;
+    border: 3px solid $secondaryColor;
+    border-radius: 25px;
+    color: $primaryColor;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-right: 8px
+}
+.whiteButton{
+    @extend .greenButton;
+    background-color: $primaryColor;
+    color: black;
+    border: 3px solid $primaryColor;
+    margin-left: 8px;
+}
 //-------------------------------IMPORTS---------------------------------
 
 @import "_landing.scss" ;
 @import "_navigationMenuScrollDown.scss";
 @import "_socialMediaBar.scss";
 @import "_socialMediaCircles.scss";
+@import "_aboutUs.scss";
 //-------------------------------IMPORTS---------------------------------
