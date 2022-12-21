@@ -300,9 +300,7 @@ body {
   width: 100%;
 }
 .services .listOfServices .service .serviceImage {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 400px;
 }
 .services .listOfServices .service .serviceImage img {
   border-radius: 50%;
@@ -314,12 +312,15 @@ body {
 .services .listOfServices .service .serviceImage::after {
   display: block;
   content: "";
-  width: 800px;
+  width: 700px;
   height: 300px;
   background-color: #366e41;
   position: relative;
   z-index: -1;
   transform: translate(-30px, -360px);
+}
+.services .listOfServices .service .serviceInformation {
+  margin-left: auto;
 }
 .services .listOfServices .service .serviceInformation p {
   width: 500px;
