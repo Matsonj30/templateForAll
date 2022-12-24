@@ -1,0 +1,112 @@
+.services{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+    b{
+        font-size: 45px;
+        color: $secondaryColor;
+        font-family: "bold";
+        text-align: center;
+    }
+    .listOfServices{
+        padding-top: 50px;
+        position: relative; //parent element has to be position with abs/relative for pseudo element of child to work with absolute positioning
+       
+        .service1{  
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            padding-left: 30px;
+            width: 100%;
+            ::after{
+                display: block;
+                content: "";
+                width: 800px;
+                height: 300px;
+                background-color: $secondaryColor;
+                position: absolute;
+                z-index: -1;
+                top: 100px;
+                left: 0px;
+            }
+            .serviceInformation{
+                margin-left: auto;
+                p{
+                    width: 500px;
+                }
+            
+            }
+        }
+            
+        .serviceImage{
+            height: fit-content;
+            
+            img{
+            border-radius: 50%;
+            height: 400px;
+            width: auto;
+            background-size: cover;
+            }
+        }
+   
+
+        .service2{
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            padding-right: 30px;
+            width: 100%;
+            justify-content: flex-end;
+
+            .serviceInformation{
+                margin-right: auto;
+                margin-left: 50px;
+                p{
+                    width: 500px;
+                }
+            
+            }
+
+        }
+            .service2::after{
+                display: block;
+                content: "";
+                width: 800px;
+                height: 300px;
+                background-color: $secondaryColor;
+                position: absolute;
+                z-index: -1;
+                top: 500px;
+                right: 0px;
+
+            }
+        
+        .service3{
+
+            ::after{
+                display: block;
+                content: "";
+                width: 800px;
+                height: 300px;
+                background-color: $secondaryColor;
+                position: absolute;
+                z-index: -1;
+                top: 900px;
+                left: 0px;
+            }
+        }
+
+          
+            
+     
+    }
+    
+}
+
+.pricing{
+    width: 100%;
+    height: 600px;
+
+}

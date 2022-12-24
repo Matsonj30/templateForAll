@@ -289,8 +289,9 @@ body {
 }
 .services .listOfServices {
   padding-top: 50px;
+  position: relative;
 }
-.services .listOfServices .service {
+.services .listOfServices .service1 {
   display: flex;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -299,30 +300,72 @@ body {
   padding-left: 30px;
   width: 100%;
 }
-.services .listOfServices .service .serviceImage {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.services .listOfServices .service .serviceImage img {
-  border-radius: 50%;
-  height: 400px;
-  width: auto;
-  background-size: cover;
-  position: relative;
-}
-.services .listOfServices .service .serviceImage::after {
+.services .listOfServices .service1 ::after {
   display: block;
   content: "";
   width: 800px;
   height: 300px;
   background-color: #366e41;
-  position: relative;
+  position: absolute;
   z-index: -1;
-  transform: translate(-30px, -360px);
+  top: 100px;
+  left: 0px;
 }
-.services .listOfServices .service .serviceInformation p {
+.services .listOfServices .service1 .serviceInformation {
+  margin-left: auto;
+}
+.services .listOfServices .service1 .serviceInformation p {
   width: 500px;
+}
+.services .listOfServices .serviceImage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.services .listOfServices .serviceImage img {
+  border-radius: 50%;
+  height: 400px;
+  width: auto;
+  background-size: cover;
+}
+.services .listOfServices .service2 {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+  padding-right: 30px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.services .listOfServices .service2 .serviceInformation {
+  margin-right: auto;
+  margin-left: 50px;
+}
+.services .listOfServices .service2 .serviceInformation p {
+  width: 500px;
+}
+.services .listOfServices .service2::after {
+  display: block;
+  content: "";
+  width: 800px;
+  height: 300px;
+  background-color: #366e41;
+  position: absolute;
+  z-index: -1;
+  top: 500px;
+  right: 0px;
+}
+.services .listOfServices .service3 ::after {
+  display: block;
+  content: "";
+  width: 800px;
+  height: 300px;
+  background-color: #366e41;
+  position: absolute;
+  z-index: -1;
+  top: 900px;
+  left: 0px;
 }
 
 .pricing {
