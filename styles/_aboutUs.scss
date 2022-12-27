@@ -1,0 +1,16 @@
+.aboutUs{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 300px;
+        height: auto;
+    }
+   p{
+    max-width: 800px;
+    border-left: 3px solid $secondaryColor;
+    padding-left: 7px;
+   }
+}

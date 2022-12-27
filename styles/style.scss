@@ -3,7 +3,7 @@ $primaryColor: #fafafa;
 $primaryDark:  #FAFAFA;
 $primaryLight: #FAFAFA;
 
-$secondaryColor: #366e41;
+$secondaryColor: #4ca25e;
 $secondaryColorDark: #2e9179;
 $secondaryColorLight: #ECF9F3;
 
@@ -73,13 +73,26 @@ body{
     cursor: pointer;
     margin-right: 8px
 }
+
 .whiteButton{
     @extend .greenButton;
-    background-color: $primaryColor;
-    color: black;
+    background-color: transparent;
+    color: $primaryColor;
     border: 3px solid $primaryColor;
     margin-left: 8px;
 }
+
+.titleOfDiv{
+  :first-child{
+      color: $secondaryColor;
+  }
+  b{
+      font-family: "bold";
+      font-size: 35px;
+  }
+}
+
+
 //-------------------------------IMPORTS---------------------------------
 
 @import "_landing.scss" ;
@@ -87,4 +100,5 @@ body{
 @import "_socialMediaBar.scss";
 @import "_socialMediaCircles.scss";
 @import "_services.scss";
+@import "_aboutUs.scss";
 //-------------------------------IMPORTS---------------------------------
