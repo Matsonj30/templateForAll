@@ -71,7 +71,7 @@ body{
     color: $primaryColor;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    margin-right: 8px
+
 }
 
 .whiteButton{
@@ -79,10 +79,11 @@ body{
     background-color: transparent;
     color: $primaryColor;
     border: 3px solid $primaryColor;
-    margin-left: 8px;
+    margin-left: 16px;
 }
 
 .titleOfDiv{
+  padding-bottom: 30px;
   :first-child{
       color: $secondaryColor;
   }
@@ -101,4 +102,5 @@ body{
 @import "_socialMediaCircles.scss";
 @import "_services.scss";
 @import "_aboutUs.scss";
+@import "_testimonials.scss"
 //-------------------------------IMPORTS---------------------------------
