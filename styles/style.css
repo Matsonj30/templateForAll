@@ -120,7 +120,7 @@ body {
   align-items: center;
   width: 100%;
   height: 125px;
-  background-color: rgba(255, 255, 255, 0.753);
+  background-color: #fafafa;
   z-index: 2;
   overflow: visible;
 }
@@ -207,7 +207,7 @@ body {
 }
 .mainContent .navigationBar .hamburgerMenu input:checked ~ span {
   transform: rotate(45deg) translate(0px, 0px);
-  background-color: #2e9179;
+  background-color: #4ca25e;
 }
 .mainContent .navigationBar .hamburgerMenu input:checked ~ span:nth-child(3) {
   opacity: 0;
@@ -262,21 +262,21 @@ body {
 }
 .socialMedia .fa:first-child {
   background-color: #3B5998;
-  border: 2px solid #3B5998;
+  border: 3px solid #3B5998;
 }
 .socialMedia .fa:first-child:hover {
   color: #3B5998;
 }
 .socialMedia .fa:nth-child(2) {
   background-color: #55ACEE;
-  border: 2px solid #55ACEE;
+  border: 3px solid #55ACEE;
 }
 .socialMedia .fa:nth-child(2):hover {
   color: #55ACEE;
 }
 .socialMedia .fa:nth-child(3) {
   background-color: rgb(209, 31, 129);
-  border: 2px solid rgb(209, 31, 129);
+  border: 3px solid rgb(209, 31, 129);
 }
 .socialMedia .fa:nth-child(3):hover {
   color: rgb(209, 31, 129);
@@ -340,7 +340,7 @@ body {
   height: auto;
 }
 .aboutUs p {
-  margin-top: 20px;
+  margin-top: 40px;
   max-width: 700px;
   border-left: 3px solid #4ca25e;
   padding-left: 7px;
