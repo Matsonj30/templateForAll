@@ -52,12 +52,12 @@ $grayColor:  #FAFAFA;
 }
 body{
   background-color: $primaryColor;
-
 }
 .wrapper{
     display: flex;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    position: relative; //needs to be here so our span will work with absolute positioning
 }
 
   .greenButton{
@@ -83,16 +83,31 @@ body{
 }
 
 .titleOfDiv{
+  
   padding-bottom: 50px;
+  background-color: $primaryColor;
+  text-align: center;
   :first-child{
-      color: $secondaryColor;
+      color: $secondaryColor;  
   }
   b{
       font-family: "bold";
-      font-size: 35px;
+      font-size: 35px;   
   }
 }
 
+.titleLine{
+  width: 100%;
+  position: absolute;
+  top: 33px;
+  z-index: -1;
+  border-bottom: 3px solid $secondaryColor;
+}
+.whiteLine{
+  @extend .titleLine;
+  width: 300px;
+  border-bottom: 3px solid $primaryColor;
+}
 @media(min-width:1000px){
 
   .greenButton{

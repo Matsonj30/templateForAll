@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
 
 .greenButton, .whiteButton {
@@ -61,6 +62,8 @@ body {
 
 .titleOfDiv {
   padding-bottom: 50px;
+  background-color: #fafafa;
+  text-align: center;
 }
 .titleOfDiv :first-child {
   color: #4ca25e;
@@ -68,6 +71,19 @@ body {
 .titleOfDiv b {
   font-family: "bold";
   font-size: 35px;
+}
+
+.titleLine, .whiteLine {
+  width: 100%;
+  position: absolute;
+  top: 33px;
+  z-index: -1;
+  border-bottom: 3px solid #4ca25e;
+}
+
+.whiteLine {
+  width: 300px;
+  border-bottom: 3px solid #fafafa;
 }
 
 @media (min-width: 1000px) {
