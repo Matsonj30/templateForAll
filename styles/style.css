@@ -60,7 +60,7 @@ body {
 }
 
 .titleOfDiv {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .titleOfDiv :first-child {
   color: #4ca25e;
@@ -70,6 +70,19 @@ body {
   font-size: 35px;
 }
 
+@media (min-width: 1000px) {
+  .greenButton, .whiteButton {
+    font-size: 18px;
+  }
+  .titleOfDiv b {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1700px) {
+  p {
+    font-size: 18px;
+  }
+}
 .landing {
   position: relative;
   overflow: hidden;
@@ -101,7 +114,6 @@ body {
 }
 .landing .mainContent .mainHeadline p {
   padding: 20px 0px;
-  font-size: 16px;
 }
 .landing .mainContent::after {
   content: "";
@@ -324,13 +336,44 @@ body {
   width: 90%;
   border-left: 3px solid #4ca25e;
   padding-left: 7px;
-  margin: 20px 0px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
+@media (min-width: 1000px) {
+  .services {
+    max-width: 1900px;
+  }
+  .services .listOfServices .service {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .services .listOfServices .service img {
+    width: 50%;
+    height: 500px;
+  }
+  .services .listOfServices .service .serviceDescription {
+    width: 50%;
+    padding: 0;
+  }
+  .services .listOfServices .service .serviceDescription p {
+    max-width: 700px;
+  }
+  .services .listOfServices .rightSide img {
+    order: 2;
+  }
+}
+@media (min-width: 1700px) {
+  .services .listOfServices .service .serviceDescription b {
+    font-size: 40px;
+  }
+}
 .aboutUs {
   padding-top: 75px;
   width: 100%;
-  height: 600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,6 +389,11 @@ body {
   padding-left: 7px;
 }
 
+@media (min-width: 1000px) {
+  .aboutUs img {
+    width: 500px;
+  }
+}
 .testimonials {
   padding-top: 100px;
   display: flex;
@@ -357,10 +405,13 @@ body {
   flex-direction: column;
   align-items: center;
   width: 250px;
+  margin-bottom: 50px;
+  margin: 20px 15px;
 }
 .testimonials .person img {
   width: 125px;
   height: auto;
+  padding: 7px 0px;
 }
 .testimonials .person p {
   text-align: center;

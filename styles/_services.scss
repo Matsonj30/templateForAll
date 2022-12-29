@@ -35,10 +35,65 @@
                 width: 90%;
                 border-left: 3px solid $secondaryColor;
                 padding-left: 7px;
-                margin: 20px 0px;
+                margin-top: 15px;
+                margin-bottom: 25px;
                }
             }
         }
     }
     
+}
+
+@media(min-width:1000px){
+    .services{
+        max-width: 1900px;
+        .listOfServices{
+            .service{
+                flex-direction: row;
+                padding-bottom: 0;
+
+                img{
+                    width: 50%;
+                    height: 500px;
+                }
+                .serviceDescription{
+                    width: 50%;
+                    padding: 0;
+                 
+                    p{
+                        max-width: 700px;
+                    }
+                }
+            }
+            .rightSide{ //move ice cream picture to other side
+                img{
+                    order: 2;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(min-width: 1700px){
+    .services{
+
+        .listOfServices{
+            .service{
+
+                .serviceDescription{
+                    b{
+                        font-size: 40px;
+                    }
+
+
+                }
+            }
+
+        }
+    }
+
+
+
 }
