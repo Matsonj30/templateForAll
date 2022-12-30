@@ -95,18 +95,13 @@ body{
       font-size: 35px;   
   }
 }
-
-.titleLine{
-  width: 100%;
-  position: absolute;
-  top: 33px;
-  z-index: -1;
-  border-bottom: 3px solid $secondaryColor;
-}
-.whiteLine{
-  @extend .titleLine;
-  width: 300px;
-  border-bottom: 3px solid $primaryColor;
+.titleOfDiv::after{
+  display: block;
+  content: "";
+  border-bottom: 5px solid $secondaryColor;
+  transform: scaleX(0.3);
+  padding-bottom: 3px;
+  margin-bottom: 20px;
 }
 @media(min-width:1000px){
 
