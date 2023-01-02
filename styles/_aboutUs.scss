@@ -1,62 +1,28 @@
-.services{
+.aboutUs{
+    padding-top: 75px;
     width: 100%;
-    height: 600px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-
-    b{
-        font-size: 45px;
-        color: $secondaryColor;
-        font-family: "bold";
-        text-align: center;
+    align-items: center;
+    img{
+        width: min(80%, 400px);
+        height: auto;
     }
-    .listOfServices{
-        padding-top: 50px;
-        .service{
-            display: flex;
-            height: fit-content;
-            align-items: center;
-            padding-left: 30px;
-            width: 100%;
-        
-            .serviceImage{
-                height: 400px;
-                img{
-                border-radius: 50%;
-                height: 400px;
-                width: auto;
-                background-size: cover;
-                position: relative;
-                
-                }
-            
-            }
-            .serviceImage::after{
-                display: block;
-                content: "";
-                width: 700px;
-                height: 300px;
-                background-color: $secondaryColor;
-                position: relative;
-                z-index: -1;
-                transform: translate(-30px, -360px);
-            }
-            .serviceInformation{
-                margin-left: auto;
-                p{
-                    width: 500px;
-                }
-
-
-            }
-            
-        }
-    }
-    
+   p{
+    margin-top: 40px;
+    max-width: 700px;
+    border-left: 3px solid $secondaryColor;
+    padding-left: 7px;
+   }
 }
 
-.pricing{
-    width: 100%;
-    height: 600px;
+@media(min-width:1000px){
+.aboutUs{
+    img{
+        width: 500px;
+    }
+}
 
 }
+

@@ -3,7 +3,7 @@ $primaryColor: #fafafa;
 $primaryDark:  #FAFAFA;
 $primaryLight: #FAFAFA;
 
-$secondaryColor: #366e41;
+$secondaryColor: #4ca25e;
 $secondaryColorDark: #2e9179;
 $secondaryColorLight: #ECF9F3;
 
@@ -52,13 +52,13 @@ $grayColor:  #FAFAFA;
 }
 body{
   background-color: $primaryColor;
-
 }
 .wrapper{
     display: flex;
     justify-content: center;
-    width: 100%
-  }
+    width: 100%;
+    position: relative; //needs to be here so our span will work with absolute positioning
+}
 
   .greenButton{
     width: fit-content;
@@ -71,20 +71,64 @@ body{
     color: $primaryColor;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    margin-right: 8px
+
 }
+
 .whiteButton{
     @extend .greenButton;
-    background-color: $primaryColor;
-    color: black;
+    background-color: transparent;
+    color: $primaryColor;
     border: 3px solid $primaryColor;
-    margin-left: 8px;
+    margin-left: 16px;
 }
+
+.titleOfDiv{
+  
+  padding-bottom: 50px;
+  background-color: $primaryColor;
+  text-align: center;
+  :first-child{
+      color: $secondaryColor;  
+  }
+  b{
+      font-family: "bold";
+      font-size: 35px;   
+  }
+}
+.titleOfDiv::after{
+  display: block;
+  content: "";
+  border-bottom: 5px solid $secondaryColor;
+  transform: scaleX(0.3);
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+@media(min-width:1000px){
+
+  .greenButton{
+    font-size: 18px;
+  }
+  .titleOfDiv{
+
+    b{
+      font-size: 45px
+    }
+  }
+}
+
+@media(min-width:1700px){
+  p{
+    font-size: 18px;
+  }
+}
+
 //-------------------------------IMPORTS---------------------------------
 
 @import "_landing.scss" ;
 @import "_navigationMenuScrollDown.scss";
 @import "_socialMediaBar.scss";
 @import "_socialMediaCircles.scss";
+@import "_services.scss";
 @import "_aboutUs.scss";
+@import "_testimonials.scss"
 //-------------------------------IMPORTS---------------------------------
