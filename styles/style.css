@@ -273,12 +273,34 @@ body {
 }
 @media (min-width: 1000px) {
   .mainContent .navigationBar #menu {
+    background-color: transparent;
     flex-direction: row;
-    height: 125px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    top: 0;
     overflow: visible;
+    -webkit-animation: none !important;
+            animation: none !important;
   }
   .mainContent .navigationBar #menu ul {
     display: flex;
+  }
+  .mainContent .navigationBar #menu ul li {
+    border-bottom: none;
+  }
+  .mainContent .navigationBar #menu ul li .fa {
+    display: none;
+  }
+  .mainContent .navigationBar #menu ul li a {
+    text-align: center;
+  }
+  .mainContent .navigationBar .hamburgerMenu {
+    display: none;
   }
 }
 .socialMedia {
@@ -322,6 +344,11 @@ body {
   background-color: #fafafa;
 }
 
+@media (min-width: 1000px) {
+  .socialMedia {
+    padding-top: 0px;
+  }
+}
 .services {
   width: 100%;
   height: -webkit-fit-content;

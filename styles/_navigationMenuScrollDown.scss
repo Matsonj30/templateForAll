@@ -2,6 +2,7 @@
   .mainContent{
  
     .navigationBar{
+    
         position: relative;
         display: flex;
         align-items: center;
@@ -135,14 +136,32 @@ to{
 @media(min-width:1000px){
     .mainContent{
         .navigationBar{
-
             #menu{
+                background-color: transparent;
                 flex-direction: row;
-                height: 125px;
+                height: fit-content;
+                width: fit-content;
+                position: relative;
+                top: 0;
                 overflow: visible;
+             
+                animation: none !important;
                 ul{
                     display: flex;
+                    li{
+                        border-bottom: none;
+                        .fa{
+                            display: none;
+                        }
+                        a{
+                            text-align: center;
+                        }
+                    }
+                   
                 }
+            }
+            .hamburgerMenu{
+                display: none;
             }
         }
 
